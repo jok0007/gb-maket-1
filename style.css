@@ -33,24 +33,34 @@ body {
 }
 .header-content__flex-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
    }
+
+   @media (max-width: 950px) {
+    .header-content__flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+       }          
+   }
+
 .header-content__text {
     margin: 0 20px 0 0;
 }
 
 .header-content__h1 {
-font-weight: normal;
-font-size: 60px;
-line-height: 69px;
-color: #FFFFFF;
-margin: 0 0 40px 0;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 69px;
+    color: #FFFFFF;
+    margin: 0 0 40px 0;
 }
 
 .header-content__li{
     font-size: 20px;
-line-height: 23px;
-color: #FFFFFF;
+    line-height: 23px;
+    color: #FFFFFF;
     list-style: none;
     margin: 0 0 10px 0;
     padding: 0 0 0 21px;
@@ -61,10 +71,16 @@ color: #FFFFFF;
 }
 
 .header-content__image {
-    flex: 0 0 472px;
+    flex: 0 0 auto;
     height: 217px;
+    width: 472px;
     background-color: #FFFFFF;
 }
+@media (max-width: 950px) {
+    .header-content__image {
+        margin: 0 0 40px 0;
+    }
+   }
 
 .main {
     flex: 1 1 auto;
@@ -75,6 +91,7 @@ color: #FFFFFF;
 }
 .about__content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     }
 .about__info {
@@ -92,19 +109,40 @@ color: #FFFFFF;
 .title{
     font-weight: normal;
     font-size: 30px;
-line-height: 36px;
-color: #445161;
+    line-height: 36px;
+    color: #445161;
 }
 .text {
-font-size: 16px;
-line-height: 24px;
-color: #333333;
+f   ont-size: 16px;
+    line-height: 24px;
+    color: #333333;
 }
 .about__image {
     flex: 0 0 430px;
     height: 245px;
     background-color:#445161;
 }
+
+.pluses {
+    background-color: #F5F5F5;
+    padding: 25px 0 50px 0;
+}
+
+.pluses__title {
+    text-align: center;
+    margin: 0 0 22px 0;
+}
+.pluses__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px 0 0;
+}
+.pluses__item {
+    padding: 0 10px 26px 43px;
+    background: url('img/plus.svg') 0 4px no-repeat;
+    flex: 0 1 50%;
+}
+
 
 .footer {
     height: 49px;
@@ -114,8 +152,8 @@ color: #333333;
     justify-content: center;
 }
 .footer-text{
-font-size: 12px;
-line-height: 24px;
-letter-spacing: 0.3px;
-color: #445162;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #445162;
 }
