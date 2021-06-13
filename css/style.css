@@ -418,7 +418,7 @@ details[open] > summary:before {
         }
 
         .buy__button:hover{
-            background-color: rgb(187, 186, 186);
+            background-color: rgb(202, 35, 152);;
             color: #FFFFFF;
         }
 
@@ -494,11 +494,11 @@ details[open] > summary:before {
             transform: translate(-50%, 0);
         }
         .contacts__button:hover {
-            background-color: rgb(187, 186, 186);
+            background-color: rgb(202, 35, 152);
             color: #FFFFFF;
         }
         .contacts__item-cont{
-            flex: 0 1 200px;
+            flex: 0 1 214px;
         }
         .contacts__cont-list{
             margin: 0 0 48px 0;  
@@ -530,6 +530,37 @@ details[open] > summary:before {
         .contacts__social-networks a{
             text-decoration: none;
         }
+        .icon-twit-icon::before {
+            font-size: 44px;
+            transition: all .3s ease 0s; 
+        }
+        .icon-twit-icon:hover::before {
+            color: rgb(202, 35, 152);
+        }
+
+        .icon-vk-icon::before {
+            font-size: 44px;
+            transition: all .3s ease 0s; 
+        }
+        .icon-vk-icon:hover::before {
+            color: rgb(202, 35, 152);
+        }
+        
+        .icon-googl-icon::before {
+            font-size: 44px;
+            transition: all .3s ease 0s; 
+        }
+        .icon-googl-icon:hover::before {
+            color: rgb(202, 35, 152);
+        }
+        
+        .icon-fb-icon::before {
+            font-size: 44px;
+            transition: all .3s ease 0s; 
+        }
+        .icon-fb-icon:hover::before {
+            color: rgb(202, 35, 152);
+        }
 
 .footer {
     height: 49px;
@@ -538,9 +569,10 @@ details[open] > summary:before {
     align-items: center;
     justify-content: center;
 }
-.footer-text{
+.footer-text a{
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.3px;
     color: #445162;
+    text-decoration: none;
 }
