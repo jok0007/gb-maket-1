@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    max-width: 1172px;
+    max-width: 1192px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -178,7 +178,7 @@ body {
     margin: 0 -10px 0 0;
 }
 .pluses__item {
-    padding: 0 10px 26px 43px;
+    padding: 0 10px 26px 0;
     flex: 0 1 50%;
     position: relative;
 }
@@ -188,7 +188,7 @@ body {
    }
 .plusse__summary{
     display: block;
-    padding: 0 0 0 40px;    
+    padding: 0 0 0 43px;    
 }
 .plusse__summary::before{
     content: '+';
@@ -201,7 +201,9 @@ body {
     width: 35px;
     background-color: #445161;
     position: absolute;
-    margin: 5px 0 0 -43px;
+    left: 0;
+    top: 5px;
+    
 }
 details[open] > summary:before {
     content: "-";
@@ -361,9 +363,6 @@ details[open] > summary:before {
             background-color: #445162;
             border-radius: 3px;
             border: #445162 solid 4px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
             margin: 0 10px 0 0;
         }
         .buy__item:last-child {
@@ -404,6 +403,7 @@ details[open] > summary:before {
             margin: 10px 20px 16px 20px;
         }
         .buy__button {
+            display: block;
             background-color: #FFFFFF;
             padding: 5px 5px;
             font-style: normal;
@@ -412,17 +412,20 @@ details[open] > summary:before {
             line-height: 18px;
             color: #445161;
             text-transform: uppercase;
-            display: inline-block;
             border-radius: 2px;
             cursor: pointer;
             min-height: 43px;
             width: 262px;
-            margin: 0 0 14px 0;
+            margin: 0 auto 14px auto;
             transition: all .3s ease 0s;            
         }
 
         .buy__button:hover{
             background-color: rgb(202, 35, 152);;
+            color: #FFFFFF;
+        }
+        .buy__button:active{
+            background-color: rgb(131, 23, 99);;
             color: #FFFFFF;
         }
 
@@ -501,6 +504,10 @@ details[open] > summary:before {
             background-color: rgb(202, 35, 152);
             color: #FFFFFF;
         }
+        .contacts__button:active{
+            background-color: rgb(131, 23, 99);
+            color: #FFFFFF;
+        }
         .contacts__item-cont{
             flex: 0 1 214px;
         }
@@ -541,6 +548,10 @@ details[open] > summary:before {
         .icon-twit-icon:hover::before {
             color: rgb(202, 35, 152);
         }
+        .icon-twit-icon:active::before {
+            color: rgb(131, 23, 99);
+        }
+        
 
         .icon-vk-icon::before {
             font-size: 44px;
@@ -548,6 +559,9 @@ details[open] > summary:before {
         }
         .icon-vk-icon:hover::before {
             color: rgb(202, 35, 152);
+        }
+        .icon-vk-icon:active::before {
+            color: rgb(131, 23, 99);
         }
         
         .icon-googl-icon::before {
@@ -557,6 +571,9 @@ details[open] > summary:before {
         .icon-googl-icon:hover::before {
             color: rgb(202, 35, 152);
         }
+        .icon-googl-icon:active::before {
+            color: rgb(131, 23, 99);
+        }
         
         .icon-fb-icon::before {
             font-size: 44px;
@@ -564,6 +581,9 @@ details[open] > summary:before {
         }
         .icon-fb-icon:hover::before {
             color: rgb(202, 35, 152);
+        }
+        .icon-fb-icon:active::before {
+            color: rgb(131, 23, 99);
         }
 
 .footer {
