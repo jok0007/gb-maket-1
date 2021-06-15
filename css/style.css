@@ -71,8 +71,15 @@ body {
     color: #FFFFFF;
     list-style: none;
     margin: 0 0 10px 0;
-    padding: 0 0 0 21px;
-    background: url('../img/li.svg') 0 3px no-repeat;
+}
+.header-content__li::before{
+content: "";
+background: url('../img/li.svg') 0 0 no-repeat;
+height: 13px;
+width: 16px;
+display: inline-block;
+vertical-align: middle;
+padding: 0 5px 0 0;
 }
 .header-content__li:last-child{
     margin: 0;
@@ -185,10 +192,12 @@ body {
 
 .pluses__item p{
     padding: 10px 0 0 40px;
+    line-height: 24px;
    }
 .plusse__summary{
     display: block;
-    padding: 0 0 0 43px;    
+    padding: 0 0 0 43px;
+    line-height: 24px;    
 }
 .plusse__summary::before{
     content: '+';
@@ -256,6 +265,7 @@ details[open] > summary:before {
         font-size: 24px;
         line-height: 30px;
         margin: 0 0 15px 0;
+        color: #445161;
     }
 @media (max-width: 1030px) {
         .screenshots__item{
@@ -265,7 +275,7 @@ details[open] > summary:before {
 
         .reviews {
             background-color: #F5F5F5;
-            padding: 25px 0 45px 0;            
+            padding: 25px 0 42px 0;            
         }
                 
         .reviews__title {
@@ -336,7 +346,7 @@ details[open] > summary:before {
         }
 
         .buy {
-            padding: 45px 0 35px 0;    
+            padding: 45px 0 36px 0;    
         }
         .buy__title{
             text-align: center;
@@ -420,9 +430,11 @@ details[open] > summary:before {
             transition: all .3s ease 0s;            
         }
 
-        .buy__button:hover{
-            background-color: rgb(202, 35, 152);;
-            color: #FFFFFF;
+        @media (min-width: 998px) {
+            .buy__button:hover{
+            background-color: rgb(202, 35, 152);
+            color: #FFFFFF;                
+            }
         }
         .buy__button:active{
             background-color: rgb(131, 23, 99);;
@@ -499,10 +511,14 @@ details[open] > summary:before {
             border-radius: 4px;
             left: 50%;
             transform: translate(-50%, 0);
+            background-color: #ffffff;
         }
-        .contacts__button:hover {
+        
+        @media (min-width: 998px) {
+            .contacts__button:hover{
             background-color: rgb(202, 35, 152);
-            color: #FFFFFF;
+            color: #FFFFFF;               
+            }
         }
         .contacts__button:active{
             background-color: rgb(131, 23, 99);
@@ -545,20 +561,24 @@ details[open] > summary:before {
             font-size: 44px;
             transition: all .3s ease 0s; 
         }
-        .icon-twit-icon:hover::before {
-            color: rgb(202, 35, 152);
+        
+        @media (min-width: 998px) {
+            .icon-twit-icon:hover::before{
+            color: rgb(202, 35, 152);             
+            }
         }
         .icon-twit-icon:active::before {
             color: rgb(131, 23, 99);
         }
         
-
         .icon-vk-icon::before {
             font-size: 44px;
             transition: all .3s ease 0s; 
         }
-        .icon-vk-icon:hover::before {
-            color: rgb(202, 35, 152);
+        @media (min-width: 998px) {
+            .icon-vk-icon:hover::before{
+            color: rgb(202, 35, 152);             
+            }
         }
         .icon-vk-icon:active::before {
             color: rgb(131, 23, 99);
@@ -568,8 +588,10 @@ details[open] > summary:before {
             font-size: 44px;
             transition: all .3s ease 0s; 
         }
-        .icon-googl-icon:hover::before {
-            color: rgb(202, 35, 152);
+        @media (min-width: 998px) {
+            .icon-googl-icon:hover::before{
+            color: rgb(202, 35, 152);             
+            }
         }
         .icon-googl-icon:active::before {
             color: rgb(131, 23, 99);
@@ -579,8 +601,10 @@ details[open] > summary:before {
             font-size: 44px;
             transition: all .3s ease 0s; 
         }
-        .icon-fb-icon:hover::before {
-            color: rgb(202, 35, 152);
+        @media (min-width: 998px) {
+            .icon-fb-icon:hover::before{
+            color: rgb(202, 35, 152);             
+            }
         }
         .icon-fb-icon:active::before {
             color: rgb(131, 23, 99);
@@ -588,15 +612,17 @@ details[open] > summary:before {
 
 .footer {
     height: 49px;
-    border-color: #F5F5F5;
+    background-color: #F5F5F5;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.footer-text a{
+.footer-text a, p{
+    font-style: normal;
+    font-weight: normal;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.3px;
     color: #445162;
-    text-decoration: none;
+    text-decoration: none;   
 }
